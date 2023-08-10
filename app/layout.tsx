@@ -1,13 +1,17 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Header from "./header";
-
-const inter = Inter({ subsets: ["latin"] });
+import Header from "../pages/header";
+import { inter, rubik } from "./styles/font";
 
 export const metadata: Metadata = {
-  title: "Rishabh Mishra | Portfolio",
-  description: "Full Stack Developer",
+  metadataBase: new URL("https://rishmi5h.vercel.com"),
+  title: "rishmi5h | home",
+  openGraph: {
+    title: "Rishabh Mishra | Home",
+    description: "Portfolio website of Rishabh Mishra",
+  },
+  description: "Portfolio website of Rishabh Mishra",
 };
 
 export default function RootLayout({

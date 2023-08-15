@@ -1,8 +1,8 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import Header from "../pages/header";
 import { inter, rubik } from "./styles/font";
+import Footer from "@/pages/Footer";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://rishmi5h.vercel.com"),
@@ -24,7 +24,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Header />
         {children}
-        <footer>Footer Component</footer>
+        <Footer />
       </body>
     </html>
   );

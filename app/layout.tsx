@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Header from "../pages/header";
 import { inter, rubik } from "./styles/font";
 import Footer from "@/pages/Footer";
+import { ThemeProvider } from "@/pages/ThemeProvider";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://rishmi5h.vercel.com"),
@@ -22,9 +23,11 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={inter.className}>
-        <Header />
-        {children}
-        <Footer />
+        <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
+          <Header />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

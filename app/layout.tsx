@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import Header from "../pages/header";
 import { inter, rubik } from "./styles/font";
 import Footer from "@/pages/Footer";
-import { ThemeProvider } from "@/pages/ThemeProvider";
+import ThemeProvider from "@/pages/ThemeProvider";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://rishmi5h.vercel.com"),

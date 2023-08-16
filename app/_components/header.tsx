@@ -2,8 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import ThemeChanger from "./ThemeChanger";
-
+import ThemeChanger from "../../pages/ThemeChanger";
 
 export default function Header() {
   const heading = "<Rishabh Mishra />";
@@ -59,7 +58,7 @@ export default function Header() {
           })}
         </div>
       </div>
-      <div className="flex flex-row">
+      <div className='flex flex-row'>
         <ThemeChanger />
       </div>
     </nav>

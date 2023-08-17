@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import ThemeChanger from "../../pages/ThemeChanger";
 
 export default function Header() {
-  const heading = "<Rishabh Mishra />";
+  const heading = "<rishmi5h />";
   const pathname = usePathname();
   const links = [
     { path: "/", label: "Home" },
@@ -17,7 +17,7 @@ export default function Header() {
     <nav className='flex items-center justify-between flex-wrap p-6 mx-16 text-xl border rounded-full mt-3'>
       <div className='flex items-center flex-shrink-0 text-white mr-3'>
         <span className='font-semibold text-xl tracking-tight'>
-          <Link href={"/"} className='hover:text-blue-800'>
+          <Link href={"/"} className='hover:text-purple-500 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent'>
             {" "}
             {heading}
           </Link>
@@ -47,8 +47,8 @@ export default function Header() {
                 className='block mt-4 lg:inline-block lg:mt-0 mr-8'
               >
                 <div
-                  className={`font-medium hover:text-blue-700 ${
-                    isActive ? "border-b-2 border-blue-600 pb-2" : "text-white"
+                  className={`font-medium hover:text-pink-500 ${
+                    isActive ? "border-b-2 border-pink-500 pb-2" : "text-white"
                   }`}
                 >
                   {label}
